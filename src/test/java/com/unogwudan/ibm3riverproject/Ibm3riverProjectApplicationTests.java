@@ -1,4 +1,4 @@
-package com.example.ibm3riverproject;
+package com.unogwudan.ibm3riverproject;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

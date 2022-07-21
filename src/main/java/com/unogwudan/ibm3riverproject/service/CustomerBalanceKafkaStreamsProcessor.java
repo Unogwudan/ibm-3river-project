@@ -55,21 +55,6 @@ public class CustomerBalanceKafkaStreamsProcessor {
         return builder.build();
     }
 
-//    private ValueJoiner valueJoiner() {
-//        return (customer, balance) -> {
-//            if (customer.getAccountId() == balance.getAccountId()) {
-//                CustomerBalance customerBalance = new CustomerBalance();
-//                customerBalance.setAccountId(customer.getAccountId());
-//                customerBalance.setCustomerId(customer.getCustomerId());
-//                customerBalance.setPhoneNumber(customer.getPhoneNumber());
-//                customerBalance.setBalance(balance.getBalance);
-//                return customerBalance;
-//            } else {
-//                return null;
-//            }
-//        };
-//    }
-
     public Properties properties() {
         Properties streamProps = new Properties();
         streamProps.put(StreamsConfig.APPLICATION_ID_CONFIG, "customer-balance-kafka-streams-processor");
